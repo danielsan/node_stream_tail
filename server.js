@@ -1,5 +1,5 @@
 HOST = null; // localhost
-PORT = 8010;
+PORT = process.argv[3];
 
 var stream = require("./stream");
 var sys = require("sys");
