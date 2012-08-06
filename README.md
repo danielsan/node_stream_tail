@@ -17,12 +17,17 @@ Node.js v0.4.1 or higher.
     Change logfilename in stream.js to the log you'd like to tail on your machine.
 
 ## Run
+
+    node server.js /path/to/file.log PORTNUM
+
+### Example
     
-    node server.js
+    node server.js /var/log/mail.log 8082
+    node server.js /var/log/xapp.log 8083
 
-## Test
+## To see your log on browser
 
-    visit http://localhost:8010 in your browser
+    visit (http://localhost:8082)
 
 ## Thanks
 
