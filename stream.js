@@ -8,7 +8,7 @@ DEBUG = false;
 
 var stream = exports;
 
-var logfilename = "/opt/local/apache2/logs/access_log";
+var logfilename = process.argv[2];
 var tail = spawn("tail", ["-f", logfilename ]);
 
 sys.puts("start tailing");
